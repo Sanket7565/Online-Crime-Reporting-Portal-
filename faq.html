@@ -1,0 +1,345 @@
+<html>
+<head>
+
+<script language="javascript">
+
+Banners = new Array('images/wanted1.jpg','images/wanted2.jfif','images/wanted3.jfif')
+Banners1 = new Array('images/missing1.jfif','images/missing2.jfif','images/missing3.jfif')
+CurrentBanner = 0
+function DisplayBanners() {
+if (document.images) {
+CurrentBanner++
+if (CurrentBanner == Banners.length || CurrentBanner == Banners1.length) {
+CurrentBanner = 0
+}
+document.RotateBanner.src= Banners[CurrentBanner]
+document.RotateBanner1.src= Banners1[CurrentBanner]
+setTimeout("DisplayBanners()",1500)
+}
+}
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<body bgcolor="black" style="background-repeat:no-repeat; background-size:100%100%">
+<body onload="DisplayBanners()">
+<header>
+<div class="logo">
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</div>
+<!--<div class="chatbot">
+<img src="images/chatbot.png" height="90" width="100" style="float:right">
+</div>-->
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+</div>
+</div>
+
+
+
+<form name="form1" method="get" action="complaintaction.jsp">
+<br>
+<h2><center><b style="color:red;font-family:times">Online Crime Reporting Frequently Asked Questions</b></center></h2><br><hr><br>
+<h3 style="font-family:times; color:white">Below is a list of common questions for Online Crime Reporting. Where possible, links to other areas of interest have been provided. If you have questions while entering your report, please Contact Us.</h2><br><hr><br>
+<p style="text-align: center; font-size: larger; font-weight: bold;"><span style="padding-left: 1em; padding-right: 1em; background: #f90000; color: #ffffff;">If there is an Emergency please contact us.</span></p>
+<br>
+
+
+
+
+
+<div class="row">
+
+
+ 
+   <div class="col1">
+   <h2 style="color:RED; font-family:times">Why report my incident online?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+Online reporting is a convenient reporting option 
+that can provide you with a copy of the police report
+and a police filenumber. The Edmonton Police Service 
+encourages citizens andvisitorsto the City of Edmonton 
+to report all crimes as it will allowus to better 
+allocate our policing resources.Please note that online 
+reporting is not meant toreplaceother forms of crime 
+reporting; if you are not comfortablereporting an 
+incident online, you can still attend a police station.
+	   </p>
+	   </pre>
+	
+   
+   </div>
+   
+   
+  <div class="col">
+   
+  <h2 style="color:RED; font-family:times">What happens to my online report after I have submitted it?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+Your report will be reviewed by a police officer within 
+24 hours. You may be contacted for additional information 
+and you will receive an email explaining the status of your 
+report. Once approved, your report will be transferred to 
+the Edmonton Police Service Records Management System to 
+undergo standard investigative and analytical processes.  
+Your report will be retained as per the Edmonton Police 
+Service retention policy.
+	   </p>
+	   </pre>
+   
+  </div>
+  
+</div>
+
+
+
+
+<div class="row">
+
+
+ 
+   <div class="col1">
+   <h2 style="color:RED; font-family:times">What do I do if my incident does not qualify for online reporting?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+Some incidents require an officer to be dispatched 
+to the crime scene to conduct an investigation; 
+others require interaction with an officer over 
+the phone or at a police station. These incidents 
+cannot be reported via online reporting.
+	   </p>
+	   </pre>
+	
+   </div>
+   
+   
+  <div class="col">
+   
+  <h2 style="color:RED; font-family:times">Why can't I report a motor vehicle collision online?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+Due to the complexity of data that needs to be gathered 
+and the need to verify collision details, most vehicle 
+collisions require the attention of an officer, either 
+on-scene or at a police station.
+	   </p>
+	   </pre>
+   
+  </div>
+  
+</div>
+
+
+<div class="row">
+
+
+ 
+   <div class="col1">
+   
+  <h2 style="color:RED; font-family:times">What if I have a suspect description?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+A suspect description is not considered a known suspect. 
+A suspect description can be included in the incident 
+description when entering an online report, assuming the 
+incident fulfils the other online reporting criteria.
+
+	   </p>
+	   </pre>
+   
+  </div>
+   
+   
+  <div class="col">
+   
+  <h2 style="color:RED; font-family:times">What is a known suspect?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+A known suspect is when you or someone else knows the person 
+or knows where to find the person who committed the crime. 
+Examples include knowing the person's name or the license 
+plate number of the vehicle the suspect was in. Please attend 
+a police station, call 7798103678 from your mobile 
+if you have a suspect.
+
+	   </p>
+	   </pre>
+   
+  </div>
+  
+</div>
+
+<div class="row">
+
+
+ 
+   <div class="col1">
+   
+  <h2 style="color:RED; font-family:times">What is considered evidence?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+Evidence includes any item(s) that the suspect brought 
+to the scene and left behind. These items may help the 
+police in identifying the suspect. You may call the 
+Online Reporting Help Line (7798103678) to discuss 
+any possible evidence to determine if an incident can 
+be reported online.
+
+	   </p>
+	   </pre>
+   
+  </div>
+   
+   
+  <div class="col">
+   
+  <h2 style="color:RED; font-family:times">What happens if I find something left behind by the suspect (evidence)?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+Items that are left behind by the suspect may help to identify him/her. 
+If there is evidence, do not file a report online. Attend a police station, 
+or call 7798103678 from your mobile.
+
+	   </p>
+	   </pre>
+   
+  </div>
+  
+</div>
+
+
+<div class="row">
+
+
+ 
+   <div class="col1">
+   
+  <h2 style="color:RED; font-family:times">Why do I require an email address to file an online report?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+An email is required to provide you with a report status 
+and to send you a copy of the report with the Edmonton 
+Police Service file number.
+
+	   </p>
+	   </pre>
+   
+  </div>
+   
+   
+  <div class="col">
+   
+  <h2 style="color:RED; font-family:times">Can I contact someone for assistance in using this system?</h2>
+  
+  
+       <pre>
+	    <p style="color:white ; font-family:times">
+
+If your question is not addressed by the Frequently Asked Questions, 
+please call our 24 hour online reporting help line at 7798103678.
+
+	   </p>
+	   </pre>
+   
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+<footer>
+<center>
+<pre><h6 style="font-family: times ; color:black"> <a href="terms.html">terms of use & policy .</a>All Copyrights Are Reserved.  For any queries contact us.</h6></pre>      
+<center>
+</footer>
+</html>
+
+
+
+
+

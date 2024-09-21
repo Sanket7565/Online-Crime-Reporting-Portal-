@@ -1,0 +1,125 @@
+<html>
+<head>
+<script language="javascript">
+
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+</script>
+<title>report complaint.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<!--<marquee> <h2 style="color:RED">"We Report Every Crime Every Time"</h2></marquee>-->
+<font size="+2">
+<div id="navbar">  
+</head>
+<!--<body bgcolor="aqua">-->
+<header>
+<!--<body background="images/bg10.jpg" style="background-repeat:no-repeat; background-size:100%100%">
+
+<img src="images/mail1.png" style="float:right" height="225" width="225">-->
+<img src="images/Logo.jpg"style="float:" width="300" height="80" >
+<style=""><i>"We Report Every Crime Every Time"</i>
+<br></br>
+<ul>
+<li> | </a></li>
+<li><a href="">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+
+</div>
+</div> 
+<br>
+</br>
+
+<form name="form1"  action="MailSend" method="POST">
+<br>
+<br>
+<center>
+<table>
+<tr>
+<td>
+<b style="color:Red;">To*:</b><input type="text" name="to" value="crimestation@gmail.com" readonly="true" required>
+</td>
+</tr>
+<tr>
+<td>
+<b style="color:Red;">Cc:</b><input type="text" name="cc" >
+</td>
+</tr>
+<tr>
+<td>
+<b style="color:Red;">Bcc:</b><input type="text" name="bcc" >
+</td>
+</tr>
+<tr>
+<td>
+<b style="color:Red;">From*:</b><input type="text" name="from" required placeholder="Your mail-id">
+</td>
+</tr>
+<tr>
+<td>
+<b style="color:Red;">Subject*:</b><input type="text" name="subject" required placeholder="Subject Of Mail">
+</td>
+</tr>
+<tr>
+<td>
+<b style="color:Red;">Content*:</b>
+</td>
+</tr>
+<tr>
+<td>
+<textarea name="t1" rows="10" cols="70" required placeholder="Compose A Content">
+</textarea>
+</td>
+</tr>
+</table>
+
+<input type="reset" name="clear" value="CLEAR">
+<input type="submit" name="send" value="SEND" >
+</center>
+</form>
+
+<footer>
+<pre><h6 style="font-family: times">All Copyrights Reserved ©.       For any queries contact us.</h6></pre>      
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+
+<script language="javascript">
+
+function load()
+{
+admin.jsp
+}
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<body bgcolor="black" style="background-repeat:no-repeat; background-size:100%100%">
+<body onload="DisplayBanners()">
+<header>
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+</div>
+</div>
+<br>
+</br>
+
+
+
+
+<form name="form1" method="Post" action="">
+<h6 style="color:white">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  Log-Out</h6>
+<a href="admin login.html"><img src="images/logout.png" style="float:right"width="50" height="50"></a>
+<div class="adminui">
+<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+<a href="view user.jsp">
+<input type="button"  value="view Users">
+</a>
+<br>
+<br>
+<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+<a href="view chat.jsp">
+<input type="button"  value="view FeedBack">
+</a>
+<br>
+<br>
+<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+<a href="view admin.jsp">
+<input type="button"  value="view Admin">
+</a>
+<br>
+<br>
+<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+<a href="viewfir.jsp">
+<input type="button"  value="View FIR">
+</a>
+</div>
+</form>
+
+                                                                      
+</body>
+</html>
+
+
+
+
+

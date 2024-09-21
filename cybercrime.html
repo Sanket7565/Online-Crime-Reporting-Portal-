@@ -1,0 +1,133 @@
+<html>
+<head>
+
+<script>
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<header>
+<!--<body background="images/bg0.jpg" style="background-repeat:no-repeat; background-size:100%100%">-->
+<body bgcolor="" onload="DisplayBanners()">
+<header>
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</header>
+<ul>
+
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+
+</div>
+</div>
+</header>
+
+
+
+
+<form name="form1" method="get" action="complaintaction.jsp">
+<center>
+<img src="images/cyber1.gif"style="float:" width="1200" height="600" ></center>
+<br>
+<br>
+<br>
+<h2 style="font-family:times"> What is Cyber-crime ? : </h2>
+
+<center>
+<pre><p><h5 style="font-family: times ; color:gray">                                                 Cybercrime, or computer-oriented crime, is a crime that involves a computer and a network.
+The computer may have been used in the commission of a crime, or it may be the target. Cybercrime may threaten a person, company 
+or a nation's security and financial health.There are many privacy concerns surrounding cybercrime when confidential informationis 
+intercepted or disclosed, lawfully or otherwise. Internationally, both governmental and non-state actors engage in cybercrimes, 
+including espionage, financial theft, and other cross-border crimes.Cybercrimes crossing international borders and involving the 
+actions of at least one nation-state is sometimes referred to as cyberwarfare.A report (sponsored by McAfee), published in 2014, 
+estimated that the annual damage to the global economy was $445 billion. Approximately $1.5 billion was lost in 2012 to online 
+credit and debit card fraud in the US. In 2018, a study by Center for Strategic and International Studies (CSIS), in partnership with 
+McAfee, concludes that close to $600 billion, nearly one percent of global GDP, is lost to cybercrime each year. 
+
+The term cyber crime refers to a variety of crimes carried out online using the internet through computers, laptops, tablets, smart TVs, 
+games consoles and smartphones. Cyber crime falls into two different categories
+
+1. Cyber-enabled crime- traditional crimes that can be increased in scale or reach by the use of the internet. These can include theft, harassment,
+fraud, identity theft, selling stolen goods, drug dealing, etc.
+
+2. Cyber-dependent crime- online crimes where a digital system is a target. These include attacks on computer systems to disrupt IT infrastructures, 
+such as; unauthorized access (hacking), malicious software programming (malware) or a distributed denial-of-service attack (DDos)</h5></p></pre>
+</center>
+<br>
+
+<h2 style="font-family:times">Common forms of cybercrime :</h2>
+
+<center>
+<img src="images/cyber.png"style="float:" width="927" height="500" >
+</center>
+<br>
+<h2 style="font-family:times"> How To Defend It ?.. </h2>
+<center>
+<video controls width="1000" >
+<source src="videos/cybercrime.mp4" type="video/mp4"
+</video>
+</center>
+<br>
+</form>
+
+
+                                                                      
+</body>
+<footer>
+<center>
+<pre><h6 style="font-family: times ; color:black"> <a href="terms.html">terms of use & policy .</a>All Copyrights Are Reserved.  For any queries contact us.</h6></pre>      
+<center>
+</footer>
+</html>
+
+
+
+
+

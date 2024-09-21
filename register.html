@@ -1,0 +1,164 @@
+<html>
+<head>
+<script language="javascript">
+
+
+
+
+var state= false;
+ function toggle()
+ {
+   if(state)
+   {
+    document.getElementById("pass").setAttribute("type","password");
+	document.getElementById("eye").setAttribute("class","fa fa-eye-slash");
+	state=false;
+	
+   }
+   else
+   {
+    document.getElementById("pass").setAttribute("type","text");
+	document.getElementById("eye").setAttribute("class","fa fa-eye");
+	state=true;
+   }
+ }
+
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<font size="+2">
+<div id="navbar">  
+</head>
+
+<header>
+<body background="images/bg2.jpg" style="background-repeat:no-repeat" height="1900" width="1920">
+<header>
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+
+
+</div>
+</div>
+
+</header>
+
+
+ 
+<br></br>
+<form name="form1" action="register" method="POST">
+<div class="registerbox">
+<img src="images/user.png" class="avatar">
+
+<p> First Name*</p>
+<input type="text" name="fname" id="fname" placeholder=" Enter First Name" required >
+<p> Last Name*</p>
+<input type="text" name="lname" id="lname" placeholder=" Enter Last Name" required >
+<table>
+                          <tr>
+                             <td>
+                             <pre><input type="radio" name="radio" id="radio" value="male"required>Male</pre>
+                              </td>
+                               </tr>
+							   </table>
+
+<table>
+                          <tr>
+                             <td>
+                         <pre><input type="radio" name="radio" id="radio" value="female"required>Female</pre>
+                              </td>
+                               </tr>
+							   </table>
+<p>Mail-Id*</p>
+<input type="text" name="mail" id="mail" placeholder=" Enter Mail Id " required >
+<p>Mobile Number*</p>
+<input type="text" name="mob" required id="mob"  maxlength="10" placeholder=" Enter Mobile Number "  required >
+</div>
+
+<div class="registerbox1">
+<p>Address*</p>
+<input type="textarea" name="add" id="add" placeholder=" Enter Address " required >
+<p> Create Username*</p>
+<input type="text" name="uname" id="uname" placeholder=" Create User-Name" required >
+<p> Create Password*</p>
+<input type="password" name="pass" id="pass" placeholder=" Create Password" required >
+<div class="eye1">
+<i class="fa fa-eye-slash" aria-hidden="true" id="eye" onclick="toggle();"></i>
+</div>
+
+<table>
+                          <tr>
+                             <td>
+                             <pre><b style=""><input type="checkbox" required>I Agree <a href="terms.html">T&C </a> </b></pre>
+                              </td>
+                               </tr>
+							   </table>
+							   <center>
+							   <input type="reset" value="Reset" id="reset" name="reset"  >
+<input type="submit" value="Register" id="register" name="register" ></center>
+<a href="Account Setting.html"> <h6 style="color:green;">Already have an account ? Login Here! </h6></a>
+</div>
+
+<!--<img src="images/register.png" height="110" width="170" onclick="submit();" hspace="39" />-->
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+
+<html>
+<head>
+<script language="javascript">
+ 
+ var state= false;
+ function toggle()
+ {
+   if(state)
+   {
+    document.getElementById("pass").setAttribute("type","password");
+	document.getElementById("eye").setAttribute("class","fa fa-eye-slash");
+	state=false;
+	
+   }
+   else
+   {
+    document.getElementById("pass").setAttribute("type","text");
+	document.getElementById("eye").setAttribute("class","fa fa-eye");
+	state=true;
+   }
+ }
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<!--<body bgcolor="aqua">-->
+<header>
+<body bgcolor="black" style="background-repeat:no-repeat" height="19" width="1920" >
+<header>
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</header>
+<ul>
+
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+
+
+
+</div>
+</div>
+
+</header>
+
+
+
+<br></br>
+
+<div class="loginbox">
+<img src="images/user.png" class="avatar">
+<h2>  </h2>
+<form name="form1" method="POST"action="userlogin">
+<br>
+<span>Username</span>
+<input type="text" name="uname" id="uname" placeholder=" Enter Valid Username" required>
+<span>Password</span><span></span>
+<input type="password" name="pass" id="pass" placeholder=" Enter Valid Password" required  >
+<div class="eye">
+<i class="fa fa-eye-slash" aria-hidden="true" id="eye" onclick="toggle();"></i>
+</div>
+<br>
+<br>
+<input type="submit" name="LOGIN" value="LOGIN" id="contBtn"  >
+<p><pre><h6>           _________Or________</h6></pre></P>
+<br>
+
+<a href="register.html" > <h6 style="color:RED;"><i>Don't Have An Account? Register Here !</i> </h6></a>
+</form>
+
+</div>
+
+
+<!--<div class="loginbox1">
+</div>-->
+
+</body>
+
+</html>

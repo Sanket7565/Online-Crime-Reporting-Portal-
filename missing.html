@@ -1,0 +1,192 @@
+<html>
+<head>
+
+<script language="javascript">
+
+Banners = new Array('images/wanted5.jfif','images/wanted3.jfif','images/wanted1.jpg','images/wanted2.jfif','images/wanted4.jfif')
+Banners1 = new Array('images/missing1.jfif','images/missing2.jfif','images/missing3.jfif','images/missing3.jfif','images/missing3.jfif')
+CurrentBanner = 0
+function DisplayBanners() {
+if (document.images) {
+CurrentBanner++
+if (CurrentBanner == Banners.length || CurrentBanner == Banners1.length) {
+CurrentBanner = 0
+}
+document.RotateBanner.src= Banners[CurrentBanner]
+document.RotateBanner1.src= Banners1[CurrentBanner]
+setTimeout("DisplayBanners()",1500)
+}
+}
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<body bgcolor="black" style="background-repeat:no-repeat; background-size:100%100%">
+<body onload="DisplayBanners()">
+<header>
+<div class="logo">
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</div>
+<!--<div class="chatbot">
+<img src="images/chatbot.png" height="90" width="100" style="float:right">
+</div>-->
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<center>
+<div class="row">
+  
+  
+<img src="images/1.png" height="500" width="543">
+ 
+   <div class="col1">
+ <img src="images/2.png" height="500" width="905" hspace="100px">
+			
+   </div>
+   
+  <div class="col">
+  
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  
+  
+<img src="images/4.png" height="500" width="543">
+ 
+   <div class="col1">
+ <img src="images/3.png" height="500" width="905" hspace="100px">
+			
+   </div>
+   
+  <div class="col">
+  
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  
+  
+<img src="images/7.png" height="500" width="543">
+ 
+   <div class="col1">
+ <img src="images/8.png" height="500" width="905" hspace="100px">
+			
+   </div>
+   
+  <div class="col">
+  
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  
+  
+<img src="images/5.png" height="500" width="543">
+ 
+   <div class="col1">
+ <img src="images/6.png" height="500" width="905" hspace="100px">
+			
+   </div>
+   
+  <div class="col">
+  
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+  
+  
+<img src="images/9.png" height="500" width="543">
+ 
+   <div class="col1">
+ <img src="images/10.png" height="500" width="905" hspace="100px">
+			
+   </div>
+   
+  <div class="col">
+  
+  </div>
+ 
+                                                                      
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,178 @@
+<html>
+<head>
+<script language="javascript">
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<font size="+2">
+<div id="navbar">  
+</head>
+
+<header>
+<body bgcolor="black" style="background-repeat:no-repeat" height="1900" width="1920">
+<header>
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+
+</div>
+</div>
+
+</header>
+
+
+ 
+<br></br>
+<form name="form1" action="fir1" method="post" enctype="multipart/form-data">
+
+<div class="user1">
+<a href="userdelete.jsp">
+<input type="button" value="Delete My account" id="deletemyaccount">
+</a>
+</div>
+<h6 style="color:white">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  Log-Out</h6>
+<a href="Account Setting.html"><img src="images/logout.png" style="float:right"width="50" height="50"></a>
+<center><h1 style="color:red; font-family:times">F.I.R.</h1></center>
+<center><h5 style="color:red; font-family:times">Within Safe Hands.</h5></center>
+<br>
+<br>
+<br>
+<div class="fir">
+<img src="images/fir.png" class="avatara">
+
+<p> First Name*</p>
+<input type="text" name="fname" id="fname" placeholder=" Enter First Name" required >
+<p> User Name*</p>
+<input type="text" name="uname" id="uname" placeholder=" Enter User Name" required >
+<table>
+                          <tr>
+                             <td>
+                             <pre><input type="radio" name="radio" id="radio" value="male"required>Male</pre>
+                              </td>
+                               </tr>
+							   </table>
+
+<table>
+                          <tr>
+                             <td>
+                         <pre><input type="radio" name="radio" id="radio" value="female"required>Female</pre>
+                              </td>
+                               </tr>
+							   </table>
+<p>Mail-Id*</p>
+<input type="text" name="mail" id="mail" placeholder=" Enter Mail Id " required >
+<p>Mobile Number*</p>
+<input type="text" name="mob" required id="mob"  maxlength="10" placeholder=" Enter Mobile Number "  required >
+
+
+<p> Select Category*</p>
+<select id="cat" name="cat" required>
+<option value="murder">Murder</option>
+<option value="robbery">Robbery</option>
+<option value="cybercrime">CyberCrime</option>
+<option value="dowry">Dowry</option>
+<option value="harrasement">Harrasement</option>
+<option value="domestic violence">Domestic violence</option>
+<option value="rape">Rape</option>
+<option value="drugs">Drug Trade</option>
+<option value="kidnapping">Kidnapping</option>
+<option value="drugs">Missing report</option>
+<option value="kidnapping">Report Wanted person</option>
+<option value="other">Other</option>
+
+</select>
+<br>
+<br>
+<p> About Crime*</p>
+<input type="textarea" name="about" id="about" placeholder="What You want to report?" required >
+<p>Any Suspect?(describe)</p>
+<input type="text" name="suspect" id="suspect" placeholder=" Suspect" required >
+<p> Crime Scene Address*</p>
+<input type="textarea" name="add" id="add" placeholder=" Enter Address " required >
+<p> Any Evidence ?</p>
+<input type="file" name="evi" id="evi"  >
+<br>
+<!--<p>Proof/Attachment (if any)</p>
+<input type="file" id="proof">-->
+<table>
+                          <tr>
+                             <td>
+                             <pre><b style=""><input type="checkbox" required>I Agree <a href="terms.html">T&C </a> </b></pre>
+                              </td>
+                               </tr>
+							   </table>
+							   <center>
+							   <a href="userui.html">
+							   <input type="button" value="Cancel" id="cancel" name="cancel"  ></a>
+							   <input type="reset" value="Reset" id="reset" name="reset"  >
+<input type="submit" value="Send" id="register" name="register"  ></center>
+
+</div>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

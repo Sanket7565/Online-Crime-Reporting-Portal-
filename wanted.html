@@ -1,0 +1,356 @@
+<html>
+<head>
+
+<script language="javascript">
+
+Banners = new Array('images/wanted1.jpg','images/wanted2.jfif','images/wanted3.jfif')
+Banners1 = new Array('images/missing1.jfif','images/missing2.jfif','images/missing3.jfif')
+CurrentBanner = 0
+function DisplayBanners() {
+if (document.images) {
+CurrentBanner++
+if (CurrentBanner == Banners.length || CurrentBanner == Banners1.length) {
+CurrentBanner = 0
+}
+document.RotateBanner.src= Banners[CurrentBanner]
+document.RotateBanner1.src= Banners1[CurrentBanner]
+setTimeout("DisplayBanners()",1500)
+}
+}
+
+
+function BreakInDetected(){
+alert('Admin has Restricted this action for security purpose')
+return false
+}
+function NetscapeBrowser(e){
+if (document.layers||
+document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+BreakInDetected()
+return false
+}
+}
+}
+function InternetExploreBrowser(){
+if (event.button==2){
+BreakInDetected()
+return false
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN)
+document.onmousedown=NetscapeBrowser()
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=InternetExploreBrowser()
+}
+document.oncontextmenu=new Function(
+"BreakInDetected();return false")
+
+
+
+</script>
+<title>ecrimefile.gov.in</title> 
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<font size="+2">
+<div id="navbar">  
+</head>
+<body bgcolor="black" style="background-repeat:no-repeat; background-size:100%100%">
+<body onload="DisplayBanners()">
+<header>
+<div class="logo">
+<img src="images/logo.png"style="float:" width="120" height="120" >
+<img src="images/logo1.png"style="float:" width="100" height="110" >
+</div>
+<!--<div class="chatbot">
+<img src="images/chatbot.png" height="90" width="100" style="float:right">
+</div>-->
+</header>
+<ul>
+<li> | </a></li>
+<li><a href="https://www.indiatoday.in/topic/crime">Hot News </a></li>
+<li> | </a></li>
+<li><a href="admin login.html">Admin Home </a></li>
+<li> | </a></li>
+<li><a href="Home.html">Home</a></li>
+<li> | </a></li>
+<li><a href="Account Setting.html">User Control</a></li>
+<li> | </a></li>
+<li><a href="cybercrime.html">Cyber Crime</a></li>
+<li> | </a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li> | </a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li> | </a></li>
+</div>
+</div>
+<br>
+<center> <h1 style="color:red;font-family:times">India's Most Wanted</h1></center>
+<hr>
+<div class="row">
+  
+  
+
+ 
+   <div class="col1">
+   <br>
+   <br>
+   <br>
+   <br>
+           <img src="images/daud.jpg" hspace="30">
+			
+   </div>
+   
+  <div class="col">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h2 style="color:red;font-family:times">1. DAWOOD IBRAHIM KASKAR</h2></center>
+  <pre><p style="color:white;font-family:times">                                  
+
+           <b style="color:red">WHO IS HE ?:</b> Son of a Maharashtra police constable, the 56-year-old don
+           is also among world's most dangerous fugitives. He operates through brother 
+           Anees and close aide Chhota Shakeel
+
+           <b style="color:red">WHY IS HE WANTED ?:</b> He organised the serial bomb blasts in Mumbai 
+           in March 1993 which killed more than 250 people. He is a key financier of 
+           anti-India works of various jehadi groups. He is also into the businesses of 
+	   counterfeiting Indian banknotes and drugs and does his best to harm India's 
+	   security and economic interests. His influence and reach spread across the 
+	   subcontinent to the UAE. Together with the members of his gang active in the 
+	   country, he is Indias most dangerous individual enemy.
+
+           <b style="color:red">BIGGEST STRIKE:</b> He was the man behind the Mumbai serial blasts in March 
+           1993
+
+           <b style="color:red">STATUS:</b> He is believed to be hiding in Karachi, Pakistan</p></pre>
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br><hr>
+<br>
+
+<div class="row">
+  
+  
+
+ 
+   <div class="col1">
+   <br>
+   <br>
+   <br>
+   <br>
+           <img src="images/illyas.jpg" hspace="30">
+			
+   </div>
+   
+  <div class="col">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h2 style="color:red;font-family:times">2. ILLYAS KASHMIRI</h2></center>
+  <pre><p style="color:white;font-family:times">                                  
+
+           <b style="color:red">WHO IS HE ?:</b> He is the leader of terror outfit Harkat_ul_jihadi islami (HUJI) 
+           and senior commander of Al-Qaeda.He was once even touted as a successor to 
+           osama bin laden.
+
+           <b style="color:red">WHY IS HE WANTED ?:</b> He was the handler of US based terrorists David 
+           Coleman Headley who played a key part in reconnaisance of targets for 26/11 
+           attack.He had formed 313 brigade to target india the outfit headed by him HUJI 
+           is suspected to be behind many terror attacks in india and other countries these 
+           include germen bakery blast in pune ,Attack on American centre in Kolkatta in 
+           2002 and blasts in delhi,jaipur,ahmedabad and bangalore in 2008.
+
+           <b style="color:red">BIGGEST STRIKE:</b> His outfits has hands in dozzen of twerrror attacks including 
+           26/11 and pune bakery blast.
+
+           <b style="color:red">STATUS:</b> Reports last year said he had been killed in US drone attack but that was 
+           denied later</p></pre>
+  </div>
+  
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br><hr>
+<br>
+<div class="row">
+  
+  
+
+ 
+   <div class="col1">
+   <br>
+   <br>
+   <br>
+   <br>
+           <img src="images/masood.jpg" hspace="30">
+			
+   </div>
+   
+  <div class="col">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h2 style="color:red;font-family:times">3. MASOOD AZHAR</h2></center>
+  <pre><p style="color:white;font-family:times">                                  
+
+           <b style="color:red">WHO IS HE ?:</b> Maulana MASOOD Azhar is one of the three terrorists the 
+           then forein minister jaswant singh escorted to kandahar to swap for the 
+           hostages of highjacked flight IC-814 in December 1999.
+
+           <b style="color:red">WHY IS HE WANTED ?:</b> After he was freed he found a sanctuary in 
+           pakistan and found Jaish-E-Mohammad in 2000. His outfit is said to be 
+           behind 2001 parliament attack in india.His cadres are still spreading 
+           terror and violence in Jammu & Kashmir.
+
+           <b style="color:red">BIGGEST STRIKE:</b> The attack on indian parliament on december 13,2001.
+
+           <b style="color:red">STATUS:</b> He is believed to be living in pakistan ,though the country denies it.</p></pre>
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br><hr>
+<br>
+
+
+
+<div class="row">
+  
+  
+
+ 
+   <div class="col1">
+   <br>
+   <br>
+   <br>
+   <br>
+           <img src="images/syed.jpg" hspace="30">
+			
+   </div>
+   
+  <div class="col">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h2 style="color:red;font-family:times">4. SYED SALAHUDDIN</h2></center>
+  <pre><p style="color:white;font-family:times">                                  
+
+           <b style="color:red">WHO IS HE ?:</b> He is the chief of "Hizbul Mujahideen" one of the most active 
+           terror groups in Jammu & Kashmir and is also the commander of Muttahida Jihad 
+           Council.
+
+           <b style="color:red">WHY IS HE WANTED ?:</b> Salahuddin and his outfit are said to be behind 
+           numerous terror strikes in jammu and kashmir His organization stands for the 
+           integration of kasmir with pakistan and has close links with and backing of pakistan 
+           spy agency Inter Services Intelligence (I.S.I.)
+
+           <b style="color:red">BIGGEST STRIKE:</b> The NIA suspects hand of his outfit in delhi highcourt blast
+           september 7, 2011 one of the accused arrested for the blast admitted that 
+           salahuddin had himself cleared and directed the operation.
+
+           <b style="color:red">STATUS:</b> He is said to be based in Muzzafarabad in pakistan occupied kashmir</p></pre>
+  </div>
+  
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br><hr>
+<br>
+
+<div class="row">
+  
+  
+
+ 
+   <div class="col1">
+   <br>
+   <br>
+   <br>
+   <br>
+           <img src="images/sajid.webp" hspace="30">
+			
+   </div>
+   
+  <div class="col">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><h2 style="color:red;font-family:times">5. SAJID MIR</h2></center>
+  <pre><p style="color:white;font-family:times">                                  
+
+           <b style="color:red">WHO IS HE ?:</b> A Lashkar-E-Tayyeba's commander, he is one of the suspected 
+           masterminds of mumbai terrorist attack of november 2008.
+
+           <b style="color:red">WHY IS HE WANTED ?:</b> The pakistani national reportedly travelled to india 
+           as acricket fan in 2005. His undercover visit was the first of the series of 
+           surveilance missions before pakistani-American David Headley was used for 
+           recce operations- which culminated in november 2008 attack on mumbai Headley 
+           reported to mir.From a safehouse in karachi, mir guided the assault team using 
+           voice-over internet line personally odering the execution of several hostages.
+
+           <b style="color:red">BIGGEST STRIKE:</b> The 26/11 attack.
+
+           <b style="color:red">STATUS:</b> Acoording to western intelligence sources, Mir is being helded in 
+           safehouse run by isi directorate, along with former milliatry officer 
+           who traveled with him to new delhi, Abdul Rehman Hashim.</p></pre>
+  </div>
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br><hr>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<form name="form1" method="get" action="complaintaction.jsp">
+
+
+</form>
+
+
+                                                                      
+</body>
+<footer>
+<center>
+<pre><h6 style="font-family: times ; color:black"> <a href="terms.html">terms of use & policy .</a>All Copyrights Are Reserved.  For any queries contact us.</h6></pre>      
+<center>
+</footer>
+</html>
+
+
+
+
+
